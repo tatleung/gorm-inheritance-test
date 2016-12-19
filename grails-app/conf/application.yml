@@ -26,6 +26,10 @@ endpoints:
 
 ---
 grails:
+    mongodb:
+        host: "localhost"
+        port: 27017
+        databaseName: "gorm-inheritance-test"
     mime:
         disable:
             accept:
