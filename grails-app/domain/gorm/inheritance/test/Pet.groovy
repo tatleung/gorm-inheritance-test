@@ -1,6 +1,6 @@
 package gorm.inheritance.test
 
-class Pet extends Animal {
+class Pet {
 
     String name
 
