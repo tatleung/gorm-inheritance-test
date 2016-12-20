@@ -31,9 +31,9 @@ if (Environment.isDevelopmentMode() && targetDir != null) {
             pattern = "%level %logger - %msg%n"
         }
     }
-    logger("StackTrace", ERROR, ['FULL_STACKTRACE'], false)
-    root(ERROR, ['STDOUT', 'FULL_STACKTRACE'])
+    logger("StackTrace", DEBUG, ['FULL_STACKTRACE'], false)
+    root(DEBUG, ['STDOUT', 'FULL_STACKTRACE'])
 }
 else {
-    root(ERROR, ['STDOUT'])
+    root(DEBUG, ['STDOUT'])
 }

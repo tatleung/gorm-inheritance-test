@@ -10,7 +10,9 @@ class PetController {
 
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
-        respond Pet.list(params), model:[petCount: Pet.count()]
+        Pet pet = new Pet(name: "Pet")
+        def petList = Pet.list(params)
+        respond petList, model:[petCount: Pet.count()]
     }
 
     def show(Pet pet) {

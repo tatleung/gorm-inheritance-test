@@ -1,6 +1,8 @@
 package gorm.inheritance.test
 
-class Pet {
+import grails.mongodb.MongoEntity
+
+class Pet extends Animal implements MongoEntity<Pet> {
 
     String name
 
